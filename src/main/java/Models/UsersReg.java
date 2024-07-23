@@ -5,8 +5,8 @@ public class UsersReg {
     private String password;
     private String name;
 
-    public UsersReg(String eMail, String password, String name ) {
-        this.email=eMail;
+    public UsersReg(String email, String password, String name ) {
+        this.email=email;
         this.password=password;
         this.name=name;
     }
