@@ -101,9 +101,6 @@ public class UserRegStep {
 
     @Step("Delete User")
     public static void DeleteUser(UsersReg UsersReg, RegUser regUser, String accessToken) {
-        /*String errorMessage = response.jsonPath().getString("message");
-        RegUser regUser = gson.fromJson(response.getBody().asString(), RegUser.class);
-        String accessToken = regUser.getAccessToken().replace("Bearer ", "");*/
         Response delete = given()
                 .log().all()
                 .header("Content-type", "application/json")
